@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pizza Planet</string>
+    <string name="calculate_price">Calculate Price</string>
+    <string name="select_crust_type">Select Crust Type:</string>
+    <string name="extra_cheese">Extra Cheese</string>
+    <string name="onions">Onions</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="mushrooms">Mushrooms</string>
+    <string name="select_toppings">Select Toppings:</string>
+    <string name="large">Large</string>
+    <string name="medium">Medium</string>
+    <string name="small">Small</string>
+    <string name="select_size">Select Size:</string>
+    <string name="todo">TODO</string>
+    <string name="pizza_planet">Pizza Planet 🍕</string>
+    <string-array name="crust_types">
+        <item>Pan</item>
+        <item>Deep Dish</item>
+        <item>Thin</item>
+    </string-array>
+</resources>

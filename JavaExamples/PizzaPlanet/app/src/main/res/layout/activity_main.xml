@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pizza_planet"
+        android:textSize="36sp"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_size"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSize"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioSmall"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/small" />
+
+        <RadioButton
+            android:id="@+id/radioMedium"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+
+            android:text="@string/medium" />
+
+        <RadioButton
+            android:id="@+id/radioLarge"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/large" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/select_toppings"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkMushrooms"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="@string/mushrooms" />
+
+    <CheckBox
+        android:id="@+id/checkPepperoni"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="@string/pepperoni" />
+
+    <CheckBox
+        android:id="@+id/checkOnions"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="@string/onions" />
+
+    <CheckBox
+        android:id="@+id/checkExtraCheese"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="@string/extra_cheese" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/select_crust_type"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerCrust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/crust_types" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="@string/calculate_price" />
+
+    <TextView
+        android:id="@+id/summaryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        tools:text="Your Order Summary Will Appear Here" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        android:layout_gravity="center"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+</LinearLayout>
